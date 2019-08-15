@@ -167,7 +167,6 @@ Board.prototype.placePiece = function (pos, color) {
     let positions = [];
 
     for (let i = 0; i < Board.DIRS.length; i++) {
-      console.log(_positionsToFlip(this, pos, color, Board.DIRS[i]));
       if (_positionsToFlip(this, pos, color, Board.DIRS[i])) {
         positions = positions.concat(_positionsToFlip(this, pos, color, Board.DIRS[i]));
       }
